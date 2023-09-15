@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Jeffrey</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
   <body>
-    <div id="bg">
+    <div id="content">
       <h1>Jeffrey Woods</h1>
-      <img
-        src="face.jpeg"
-        alt="Face of Jeffrey Woods"
-        width="500"
-        height="500"
-      />
+      <hr />
+      <img src="face.jpeg" alt="Face of Jeffrey Woods" id="face" />
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01" src="face.jpg" alt="My face, made bigger" />
+      </div>
 
       <h2>Personal Info</h2>
       <ul>
@@ -105,71 +110,55 @@
         manufacturer like they are nowadays.
       </p>
       <h2>Class Schedule</h2>
-      <table>
-        <tr>
-          <th></th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-        </tr>
-        <tr>
-          <th>8:30</th>
-          <td rowspan="9">"The School of Hard Knocks"</td>
-          <td rowspan="3">CS 2370</td>
-          <td rowspan="9">Touch grass (all day)</td>
-          <td rowspan="3">CS 2370</td>
-          <td rowspan="9">CS 9999</td>
-        </tr>
-        <tr>
-          <th>9:00</th>
-        </tr>
-        <tr>
-          <th>9:30</th>
-        </tr>
-        <tr>
-          <th>10:00</th>
-          <td rowspan="3">CS 2550</td>
-          <td rowspan="3">CS 2550</td>
-        </tr>
-        <tr>
-          <th>10:30</th>
-        </tr>
-        <tr>
-          <th>11:00</th>
-        </tr>
-        <tr>
-          <th>11:30</th>
-          <td rowspan="3">CS 2420</td>
-          <td rowspan="3">CS 2420</td>
-        </tr>
-        <tr>
-          <th>12:00</th>
-        </tr>
-        <tr>
-          <th>12:30</th>
-        </tr>
-      </table>
-      <div>
-        <p>--SELF GRADE--</p>
-        <p>HEADER: A</p>
-        <p>PERSONAL INFO: A</p>
-        <p>FAVE BOOKS: A</p>
-        <p>HAIKU: A</p>
-        <p>ESSAY: A</p>
-        <p>SCHEDULE: A</p>
-        <p>--EXTRA ITEMS COMPLETED--</p>
-        <ul>
-          <li>REPEATING BKG IMG (2pts)</li>
-          <li>CHANGE FONT (2pts)</li>
-          <li>RT ALIGN PHOTO (2pts)</li>
-          <li>INDENT/CENTER HAIKU (2pts)</li>
-          <li>LINKS ONLY UNDERLINE ON HOVER (2pts)</li>
-        </ul>
-        <p>ADDITIONAL COMMENTS</p>
-        <p>A+ score because I fulfilled all requirements to a T.</p>
+      <div class="centered">
+        <table>
+          <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <th>8:30</th>
+            <td rowspan="9" class="blue-bg">"The School of Hard Knocks"</td>
+            <td rowspan="3" class="purple-bg">CS 2370</td>
+            <td rowspan="9" class="green-bg">Touch grass (all day)</td>
+            <td rowspan="3" class="purple-bg">CS 2370</td>
+            <td rowspan="9" class="red-bg">CS 9999</td>
+          </tr>
+          <tr>
+            <th>9:00</th>
+          </tr>
+          <tr>
+            <th>9:30</th>
+          </tr>
+          <tr>
+            <th>10:00</th>
+            <td rowspan="3" class="yellow-bg">CS 2550</td>
+            <td rowspan="3" class="yellow-bg">CS 2550</td>
+          </tr>
+          <tr>
+            <th>10:30</th>
+          </tr>
+          <tr>
+            <th>11:00</th>
+          </tr>
+          <tr>
+            <th>11:30</th>
+            <td rowspan="3" class="orange-bg">CS 2420</td>
+            <td rowspan="3" class="orange-bg">CS 2420</td>
+          </tr>
+          <tr>
+            <th>12:00</th>
+          </tr>
+          <tr>
+            <th>12:30</th>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
+  <script src="scripts/scripts.js"></script>
 </html>
